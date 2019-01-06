@@ -1,0 +1,168 @@
+/*// BASE STYLES //*/
+
+html, body{
+  height: 100%;
+  width:100%;
+  overflow: hidden;
+  margin: 0;
+}
+
+.grass, .sky, .road{
+  position: relative;
+}
+
+.sky{
+  height: 40%;
+  background: skyblue;
+}
+
+.grass{
+  height: 30%;
+  background: seagreen;
+}
+
+.road{
+  height: 30%;
+  background: dimgrey;
+  box-sizing: border-box;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 100%;
+}
+
+.lines{
+  box-sizing: border-box;
+  border: 5px dashed #fff;
+  height: 0px;
+  width: 100%;
+  position: absolute;
+  top: 45%;
+}
+
+/*// ELEMENTS TO ANIMATE //*/
+img{
+  height: 100px;
+}
+img.mario{
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  animation: drive 4s linear infinite;
+  animation-fill-mode: both;
+}
+img.mario1{
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  animation: drive 5s 1s linear infinite;
+  animation-fill-mode: both;
+}
+img.mario2{
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  animation: drive 2s 2s linear infinite;
+  animation-fill-mode: both;
+}
+img.mario3{
+  height: 100px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  animation: drive 1s 2s linear infinite;
+  animation-fill-mode: both;
+}
+img.driver_2{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  animation: drive 3s 1s linear infinite;
+  animation-fill-mode: both;
+}
+img.driver_3{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  position: absolute;
+  top: -40px;
+  left: 0;
+  animation: drive 3s 1.5s linear infinite;
+  animation-fill-mode: both;
+}
+img.driver_5{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  position: absolute;
+  top: -40px;
+  left: 0;
+  animation: drive 6s 0.5s linear infinite;
+  animation-fill-mode: both;
+}
+img.driver_4{
+  -webkit-filter: grayscale(150%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(150%);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  animation: nyuma 6s linear infinite;
+  animation-fill-mode: both;
+}
+img.driver_6{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  animation: drive 4s 2s linear infinite;
+  animation-fill-mode: both;
+}
+img.driver_7{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  animation: nyuma 2s 2.5s linear infinite;
+  animation-fill-mode: both;
+}
+img.driver_8{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  transform: rotateY(180deg);
+  animation: nyuma 4s linear infinite;
+  animation-fill-mode: both;
+}
+
+
+
+/*// KEYFRAMES //*/
+@keyframes drive{
+
+  from{
+    transform: translateX(-100px);
+  }
+  to{
+    transform: translateX(110vw);
+  }
+
+}
+
+@keyframes nyuma{
+
+
+  from{
+    transform: translateX(110vw) rotateY(180deg);
+    /*transform: rotateY(180deg);*/
+  }
+  to{
+    transform: translateX(-100px) rotateY(180deg);
+    /*transform: rotateY(180deg);*/
+  }
+
+}
+
+
+
+
+
+
+
